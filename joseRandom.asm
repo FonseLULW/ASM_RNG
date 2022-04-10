@@ -46,7 +46,7 @@ generateRandomNumber proc               ;start of the generateRandomNumber proce
     mov ax, dx                          ;we can just use dx, we need to put it in
                                         ;ax for division
     mov dx,0                            ;in division the dividend is split into
-                                        ;two registers, ax:dx. we must reset 0
+                                        ;two registers, dx:ax. we must reset 0
     mov bx,10                           ;move 10 to bx, this will make sure that
                                         ;the remainder is between 0-9
     div bx                              ;value in ax divided by the operand (bx)
